@@ -1,0 +1,6 @@
+brew "llvm"
+brew "gcc"
+brew "cmake"
+brew "conan"
+brew "ninja"
+brew "clang-format"
