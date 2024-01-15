@@ -4,8 +4,8 @@ project(my_project)
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS_DEBUG "-Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wunreachable-code -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Werror -g -O0")
-set(CMAKE_CXX_FLAGS_RELEASE "-Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wunreachable-code -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Werror -O3")
+set(CMAKE_CXX_FLAGS_DEBUG "-Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wunreachable-code -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Werror -march=native -mfpmath=sse -g -O0")
+set(CMAKE_CXX_FLAGS_RELEASE "-Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wunreachable-code -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Werror -march=native -mfpmath=sse -O3")
 
 add_compile_options(-fsanitize=address)
 add_link_options(-fsanitize=address)
